@@ -1,5 +1,7 @@
 # C++刷题总结
 
+## [cppreference.com - C++参考手册](https://cppreference.cn/w/)
+
 ## 一、语言基础
 
 ### 二、常用
@@ -158,14 +160,41 @@
 
 > 动态数组容器，可以存储一系列相同类型的元素
 >
-> `std::vector<Type> vec;`
+> ### 构造：
+>
+> ​	`vector<类型> arr(长度，[初值])`
+>
+> ```cpp
+> #include <vector>
+> 
+> // 一维
+> vector<int> arr;			// 构造 int 数组
+> vector<int> arr(100);		// 构造初始长度为100的 int 数组
+> vector<int> arr(100, 1);	// 构造初始长度为100的 int 数组，初值为 1
+> 
+> // 二维
+> vector<vector<int>> mat(100, vector<int> ());			// 构造初始100行，不指定列数的二维数组
+> ||
+> vector<vector<int>> arr(100, vector<int> ());			// 与上一行等价
+>     
+> vector<vector<int>> mat(100, vector<int> (666, -1));	// 构造初始100行，初始666列的二维数组，初值为 -1.
+> ||
+> vector<vector<int>> arr(100, vector<int> (666, -1));    // 与上一行等价
+> ```
+>
+> 
 >
 > 1. 元素访问 ->` [] or at()`
 > 2. 元素添加或删除
->    - `push_back()`
+>    - `push_back()` 
 >    - `pop_bavk()`
 >    - `insert()`
 >    - `erase()`
+>    - `size()`
+>    - `clear()`
+>    - `empty()`
+>    - `resize()`
+>    - `back()`
 > 3. 容器大小管理
 > 4. 迭代器
 >    - `begin()`
@@ -179,11 +208,12 @@
 
 #### 二、`stack`
 
-> 后进先出（LIFO）的数据结构
+> 后进先出（LIFO）的数据结构，**==不可访问内部元素==**
 >
 > ```cpp
 > template <class T, class Container = deque<T>>
-> class stack;    
+> class stack;   
+> 
 > ```
 >
 > 1. `push()`：栈顶插入元素
@@ -202,7 +232,7 @@
 
 1.  `set`
     
-    > 是一种容器，用于存储一组唯一的元素，并按照一定的排序规则进行排序，默认是升序排列,`元素唯一`
+    > 是一种容器，用于存储一组唯一的元素，并按照一定的排序规则进行排序，默认是升序排列,`元素唯一`，==确定性，互异性，无序性==，==不存在下标索引，元素只读==
     >
     > ```cpp
     > template <class Key, class Compare = less<Key>,
@@ -224,6 +254,24 @@
     > 12. `rbegin()`：返回指向集合末尾位置的逆向迭代器
     > 13. `rend()`：返回指向多重集合起始位置的逆向迭代器
     > 14. `swap()`：交换两个集合
+    >
+    >  
+    >
+    > **遍历：**
+    >
+    > ```cpp
+    > for (set<int>::iterator it = st.begin();it != st.end(); ++i){
+    >     cout << it << endl;
+    > }
+    > ```
+    >
+    > ```cpp
+    > for (auto &ele : st){
+    >     cout << ele << endl;
+    > }
+    > ```
+    >
+    > 
 
 
 
@@ -279,7 +327,7 @@
 
 1. `queue` 队列
 
-   > `queue` 是一种先进先出(FIFO)的数据结构
+   > `queue` 是一种先进先出(FIFO)的数据结构，**==不可访问内部元素==**
    >
    > ```cpp
    > template <class T,class Container = deque<T>>
@@ -297,13 +345,18 @@
 
 2. `priority_queue` 优先队列
 
-   > `priority_queue` 中的元素是按照一定的**优先级**进行排序的，默认为按照元素值从大到小排列
+   > `priority_queue` 中的元素是按照一定的**优先级**进行排序的，默认为按照元素值从大到小排列.**==不可访问内部元素且所有元素不可修改==**
    >
-   > **`priority_queue<int, vector<int>, greater<int> >`**
+   > ```cpp
+   > priority_queue<int, vector<int>, greater<int> >;	//小到大
+   > priority_queue<int, vector<int>, less<int> >;		//大到小
+   > ```
+   >
+   > 
    >
    > ```cpp
    > template <class T,class Container = vector<T>,
-   > 			class Compare = less<typename Container::value_type>>
+   > 			class Compare = less<typename> Container::value_type>>
    > class priority_queue;                
    > ```
    >
@@ -404,6 +457,22 @@
    > 9. `emety()` 判断容器是否为空
    > 10. `lower_bound()` 返回第一个不小于指定键的元素位置
    > 11. `upper_bound()` 返回指向第一个大于指定键的元素位置
+   >
+   >  
+   >
+   > ```cpp
+   > for (map<int, int>::itrator it = map.begin(); it != map.end(); ++it){
+   >     cout << it->first << ' ' << it->second << endl;
+   > }
+   > ```
+   >
+   > ```cpp
+   > for(auto &els : map){
+   >     cout << els.first << ' ' << els.second << endl;
+   > }
+   > ```
+   >
+   > 
 
 2. `multimap`
 
@@ -477,6 +546,7 @@
 
 
 
+#### 八、`string`
 
 
 
@@ -498,6 +568,7 @@
 
 
 
+#### 九、迭代器
 
 
 
@@ -513,61 +584,295 @@
 
 
 
+#### 十、算法
 
+- ==算法库 Algorithm==
+  - [ ] `count()`
+  - [ ] `find()`
+  - [ ] `fill()`
+  - [x] [`swap()`](https://zh.cppreference.com/w/cpp/algorithm/swap)
+  - [x] [`reverse()`](https://zh.cppreference.com/w/cpp/algorithm/reverse)
+  - [ ] `shuffle()` C++11
+  - [x] [`unique()`](https://zh.cppreference.com/w/cpp/algorithm/unique)
+  - [x] [`sort()`](https://zh.cppreference.com/w/cpp/algorithm/sort)
+  - [x] [`lower_bound()`](https://zh.cppreference.com/w/cpp/algorithm/lower_bound) / [`upper_bound()`](https://zh.cppreference.com/w/cpp/algorithm/upper_bound)
+  - [x] [`max()`](https://zh.cppreference.com/w/cpp/algorithm/max) / [`min()`](https://zh.cppreference.com/w/cpp/algorithm/min)
+  - [ ] `max_element()` / `min_element()`
+  - [ ] `prev_permutation()` / `next_permutation()`
+- ==数学函数 cmath==
+  - [x] [`abs()`](https://zh.cppreference.com/w/cpp/numeric/math/fabs)
+  - [x] [`exp()`](https://zh.cppreference.com/w/cpp/numeric/math/exp)
+  - [x] [`log()`](https://zh.cppreference.com/w/cpp/numeric/math/log) / `log10()` / `log2()`
+  - [x] [`pow()`](https://zh.cppreference.com/w/cpp/numeric/math/pow)
+  - [x] [`sqrt()`](https://zh.cppreference.com/w/cpp/numeric/math/sqrt)
+  - [ ] `sin()` / `cos()` / `tan()`
+  - [ ] `asin()` / `acos()` / `atan()`
+  - [ ] `sinh()` / `cosh()` / `tanh()`
+  - [ ] `asinh()` / `acosh()` / `atanh()` C++11
+  - [x] [`ceil()`](https://zh.cppreference.com/w/cpp/numeric/math/ceil) / [`floor()`](https://zh.cppreference.com/w/cpp/numeric/math/floor)
+  - [x] [`round()`](https://zh.cppreference.com/w/cpp/numeric/math/round) C++11
+- ==数值算法 numeric==
+  - [ ] `iota()` C++11
+  - [ ] `accumulate()`
+  - [x] [`gcd()`](https://zh.cppreference.com/w/cpp/numeric/gcd) C++17
+  - [x] [`lcm()`](https://zh.cppreference.com/w/cpp/numeric/lcm) C++17
+- 伪随机数生成 random
+  - [ ] `mt19937`
+  - [ ] `random_device()`
 
+##### 1. ==`swap()`==
 
+交换两个变量的值
 
+**用法示例**
 
+```cpp
+template< class T >
+void swap( T& a, T& b );
+```
 
+```cpp
+int a = 0, b = 1;
+swap(a, b);
+// now a = 1, b = 0
 
+int arr[10] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+swap(arr[4], arr[6]);
+// now arr = {0, 1, 2, 3, 6, 5, 4, 7, 8, 9}
+```
 
+**注意事项**
 
+这个 swap 参数是引用的，不需要像 C 语言一样取地址。
 
+##### 2. ==`sort()`==
 
+使用快速排序给一个可迭代对象排序
 
+**用法示例**
 
+```cpp
+template< class RandomIt, class Compare >
+void sort( RandomIt first, RandomIt last, Compare comp );
+```
 
+默认排序从小到大
 
+```cpp
+vector<int> arr{1, 9, 1, 9, 8, 1, 0};
+sort(arr.begin(), arr.end());
+// arr = [0, 1, 1, 1, 8, 9, 9]
+```
 
+如果要从大到小，则需要传比较器进去。
 
+```cpp
+vector<int> arr{1, 9, 1, 9, 8, 1, 0};
+sort(arr.begin(), arr.end(), greater<int>());
+// arr = [9, 9, 8, 1, 1, 1, 0]
+```
 
+如果需要完成特殊比较，则需要手写比较器。
 
+比较器函数返回值是 bool 类型，传参是需要比较的两个元素。记我们定义的该比较操作为 $\star$：
 
+- 若 $a\star b$，则比较器函数应当返回 `true`
+- 若 $a\not\star b$，则比较器函数应当返回 `false`
 
+**注意：**如果 $a=b$，比较器函数必须返回 `false`
 
+```cpp
+bool cmp(pair<int, int> a, pair<int, int> b)
+{
+    if (a.second != b.second)
+        return a.second < b.second;
+    return a.first > b.first;
+}
 
+int main()
+{
+    vector<pair<int, int>> arr{{1, 9}, {2, 9}, {8, 1}, {0, 0}};
+	sort(arr.begin(), arr.end(), cmp);
+    // arr = [(0, 0), (8, 1), (2, 9), (1, 9)]
+}
+```
 
+##### 3. ==`lower_bound()`== / ==`upper_bound()`==
 
+在**已升序排序**的元素中，应用二分查找检索指定元素，返回对应元素迭代器位置。**找不到则返回尾迭代器。**
 
+- `lower_bound()`: 寻找 $\geq x$ 的第一个元素的位置
+- `upper_bound()`: 寻找 $>x$ 的第一个元素的位置
 
+怎么找 $\leq x$ / $< x$ 的第一个元素呢？
 
+- $>x$ 的第一个元素的前一个元素（如果有）便是 $\leq x$ 的第一个元素
+- $\geq x$ 的第一个元素的前一个元素（如果有）便是 $<x$ 的第一个元素
 
+返回的是迭代器，如何转成下标索引呢？减去头迭代器即可。
 
+**用法示例**
 
+```cpp
+template< class ForwardIt, class T >
+ForwardIt lower_bound( ForwardIt first, ForwardIt last, const T& value );
+```
 
+```cpp
+vector<int> arr{0, 1, 1, 1, 8, 9, 9};
+vector<int>::iterator it = lower_bound(arr.begin(), arr.end(), 7);
+int idx = it - arr.begin();
+// idx = 4
+```
 
+我们通常写成一行：
 
+```cpp
+vector<int> arr{0, 1, 1, 1, 8, 9, 9};
+idx = lower_bound(arr.begin(), arr.end(), 7) - arr.begin(); // 4
+idx = lower_bound(arr.begin(), arr.end(), 8) - arr.begin(); // 4
+idx = upper_bound(arr.begin(), arr.end(), 7) - arr.begin(); // 4
+idx = upper_bound(arr.begin(), arr.end(), 8) - arr.begin(); // 5
+```
 
+##### 4.==`reverse()`==
 
+反转一个可迭代对象的元素顺序
 
+**用法示例**
 
+```cpp
+template< class BidirIt >
+void reverse( BidirIt first, BidirIt last );
+```
 
+```cpp
+vector<int> arr(10);
+iota(arr.begin(), arr.end(), 1);
+// 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+reverse(arr.begin(), arr.end());
+// 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+```
 
+##### 5. ==`max()` / `min()`==
 
+返回最大值 / 最小值的**数值**
 
+**用法示例**
 
+```cpp
+int mx = max(1, 2); // 2
+int mn = min(1, 2); // 1
+```
 
+在 C++11 之后，可以使用列表构造语法传入一个列表，这样就能一次性给多个元素找最大值而不用套娃了：
 
+```cpp
+// Before C++11
+int mx = max(max(1, 2), max(3, 4)); // 4
+int mn = min(min(1, 2), min(3, 4)); // 1
 
+// After C++11
+int mx = max({1, 2, 3, 4}); // 4
+int mn = min({1, 2, 3, 4}); // 1
+```
 
+##### 6. ==`unique()`==
 
+消除数组的重复**相邻**元素，数组长度不变，但是有效数据缩短，返回的是有效数据位置的结尾迭代器。
 
+例如：$[1,1,4,5,1,4]\to[1,4,5,1,4,\underline?]$，下划线位置为返回的迭代器指向。
 
+```cpp
+template< class ForwardIt >
+ForwardIt unique( ForwardIt first, ForwardIt last );
+```
 
+**用法示例**
 
+单独使用 unique 并不能达成去重效果，因为它只消除**相邻**的重复元素。但是如果序列有序，那么它就能去重了。
 
+但是它去重后，序列尾部会产生一些无效数据：$[1,1,2,4,4,4,5]\to[1,2,4,5,\underline?,?,?]$，为了删掉这些无效数据，我们需要结合 erase.
 
+最终，给 vector 去重的写法便是：
 
+```cpp
+vector<int> arr{1, 2, 1, 4, 5, 4, 4};
+sort(arr.begin(), arr.end());
+arr.erase(unique(arr.begin(), arr.end()), arr.end());
+```
+
+##### 7. **==数学函数==**
+
+所有函数参数均支持 `int` / `long long` / `float` / `double` / `long double`
+
+| 公式                    | 示例         |
+| ----------------------- | ------------ |
+| $f(x)=\lvert x\rvert$   | `abs(-1.0)`  |
+| $f(x)=e^x$              | `exp(2)`     |
+| $f(x)=\ln x$            | `log(3)`     |
+| $f(x,y)=x^y$            | `pow(2, 3)`  |
+| $f(x)=\sqrt x$          | `sqrt(2)`    |
+| $f(x)=\lceil x\rceil$   | `ceil(2.1)`  |
+| $f(x)=\lfloor x\rfloor$ | `floor(2.1)` |
+| $f(x)=\left<x\right>$   | `rount(2.1)` |
+
+**注意事项**
+
+由于浮点误差，有些的数学函数的行为可能与预期不符，导致 WA。如果你的操作数都是整型，那么用下面的写法会更稳妥。
+
+> 原文地址：https://codeforces.com/blog/entry/107717
+
+- $\lfloor\frac{a}{b}\rfloor$
+  - 别用：`floor(1.0 * a / b)`
+  - 要用：`a / b`
+- $\lceil\frac{a}{b}\rceil$
+  - 别用：`ceil(1.0 * a / b)`
+  - 要用：`(a + b - 1) / b`  （$\lceil\frac{a}{b}\rceil=\lfloor\frac{a+b-1}{b}\rfloor$）
+- $\lfloor\sqrt a\rfloor$
+  - 别用：`(int) sqrt(a)`
+  - 要用：二分查找 https://io.zouht.com/7.html
+- $a^b$
+  - 别用：`pow(a, b)`
+  - 要用：快速幂 https://io.zouht.com/18.html
+- $\lfloor\log_2 a\rfloor$
+  - 别用：`log2(a)`
+  - 要用：`__lg` （不规范，但是这是竞赛）/ `bit_width`（C++20 可用）
+
+##### 8. ==`gcd()`== / ==`lcm()`==
+
+（C++17）返回最大公因数 / 最小公倍数
+
+```cpp
+int x = gcd(8, 12); // 4
+int y = lcm(8, 12); // 24
+```
+
+如果不是 C++17，但是是 GNU 编译器（g++），那么可以用内置函数 `__gcd()`.
+
+当然，`gcd` / `lcm` 函数也挺好写，直接写也行（欧几里得算法）：
+
+```cpp
+int gcd(int a, int b)
+{
+    if (!b)
+        return a;
+    return gcd(b, a % b);
+}
+
+int lcm(int a, int b)
+{
+    return a / gcd(a, b) * b;
+}
+```
+
+
+
+
+
+
+
+- [x] 
 
 
 
