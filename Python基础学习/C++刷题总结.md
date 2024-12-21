@@ -1391,23 +1391,56 @@ void dfs(int dep){
 
 #### 2、二维DP
 
+
+
+> 二维 dp 就是指 dp 数组的维度为二维的 dp，用于描述 dp 状态的变量不止一个
+>
+>  
+>
+> [1.数字三角形 - 蓝桥云课](https://www.lanqiao.cn/problems/505/learning/?page=1&first_category_id=1&problem_id=505)
+>
+> > ```cpp
+> > #include <bits/stdc++.h>
+> > using namespace std;
+> > const int N = 105;
+> > int a[N][N], dp[N][N][N];
+> > 
+> > int main(){
+> >     int n; cin >> n;
+> >     for(int i = 1; i <= n; i++){
+> >         for(int j = 1; j <= i; j++){
+> >             cin >> a[i][j];
+> >         }
+> >     }
+> >     // dp[i][j][k] 表示从该点（i， j）出发，一共进行了 k 次右移（自然有 n - i - k 次左移）
+> >     // dp[i][j][k] = max(dp[i+1][j][k], dp[i + 1][j+1][k - 1]) + a[i][j]
+> >     // 即，如果从 (i, j) 出发，一共进行了 k 次右移，那么可以选择右移还是左移，
+> >     // 右移的话，则 dp[i+1][j][k] 就是从 (i+1, j) 出发的最优解，左移的话，则 dp[i+1][j+1][k-1] 就是从 (i+1, j+1) 出发的最优解。
+> >     // 所以 dp[i][j][k] 就是从 (i, j) 出发，一共进行了 k 次右移的最优解。
+> >     // 最后根据总移动次数 n - 1 奇偶性，来决定输出哪个值。分类讨论
+> >     for(int i = n; i >= 1; i--){
+> >         for(int j = 1; j <= i; j++){
+> >             for(int k = 0; k <= n - i; k++){
+> >                 if(k >= 1) dp[i][j][k] = max(dp[i+1][j][k], dp[i + 1][j+1][k - 1]) + a[i][j];
+> >                 else dp[i][j][k] = dp[i+1][j][k] + a[i][j];
+> >             }
+> >         }
+> >     }
+> >     if(n & 1) cout << dp[1][1][(n - 1) / 2];
+> >     else cout << max(dp[1][1][(n - 1) / 2], dp[1][1][n - 1 - (n - 1) / 2]);
+> >     return 0;
+> > }
+> > ```
+> >
+> > 
+
 #### 3、LIS 最长上升子序列
 
-```python
-# dp[i] 表示以第 i 个数结尾的最长上升子序列的长度
-# 如果一个上升子序列的最大值小于在他后面的数，则这个数和原上升子序列可以组成新的上升子序列
-# 每一个数都可以当作是长度为 1 的最长上升子序列
+![](./Images/LIS.jpg)
 
-
-n = int(input())
-li = list(map(int, input().split()))
-dp = [1] * (n)
-for i in range(n):
-	for j in range(i):
-		if li[j] < li[i]:
-         dp[i] = max(dp[j] + 1, dp[i])
-print(max(dp))
-```
+>  $LIS$
+>
+> 子序列是指一个序列中，按照原顺序选出若干个不一定连续的元素所组成的序列
 
 
 
@@ -1415,36 +1448,10 @@ print(max(dp))
 
 ![](./Images/蓝桥最长公共子序列.jpg)
 
-> ```python
-> # dp[i][j] 表示字符 s1 前 i 个与字符 s2 前 j 个的最长公共子序列的长度
-> n, m = map(int, input().split())		# 读入两个字符串长度
-> s1 = [0] + list(map(int, input().split()))			# 使下标从 0 开始
-> s2 = [0] + list(map(int, input().split()))
-> dp = [[0] * (m + 1) for _ in range(n + 1)]
-> for i in range(1, n + 1):
-> for j in range(1, m + 1):
->   if s1[i] == s2[j]:
->       dp[i][j] = dp[i - 1][j - 1] + 1
->   else:
->       dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]) + 1
-> print(dp[n][m]) 
+>  
 > 
-> # 输出最长公共子序列
-> ans = []
-> x, y = n, m
-> while x != 0 and y != 0:
-> if dp[x][y] == dp[x - 1][y]:
->   x -= 1
-> elif dp[x][y] == dp[x][y - 1]:
->   y -= 1
-> else:
->   ans.append(s1[x])
->   x -= 1
->   y -= 1
-> print(*ans[::-1])        
+>  $LCS(Longest Common Subsequence )最长公共子序列$
 > 
-> ```
->
 > 
 
 ### 二、背包问题
