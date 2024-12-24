@@ -1687,7 +1687,13 @@ $$
 
 
 
-##### 2、GCD 最大公约数
+##### 2、同余
+
+> $如果 a≡bmod   c*a*≡*b*mod *c* ,则 a×bmod  c=((amod  c)×(bmod  c))mod   c*a*×*b*mod*c*=((*a*mod*c*)×(*b*mod*c*))mod *c*$
+
+
+
+##### 3、GCD 最大公约数
 
 >  `gcd(a, b)` = `gcd(b, a % b)`
 
@@ -1695,7 +1701,7 @@ $$
 
 
 
-##### 3、LCM 最小公倍数
+##### 4、LCM 最小公倍数
 
 > `lcm(a, b)` = `a * b // gcd(a, b)`
 
@@ -1819,28 +1825,44 @@ $唯一分解定理：即算术基本定理，对任意一个大于等于1的整
 
 #### 7、快速幂
 
-```python
-def Ten_to_two(num, base = 2):	# 将指数转换为二进制
- char = "0123456789"
- ans = ""
- while num != 0:
-     ans += char[num % base]
-     num //= base
- return int(ans[::-1])
-def quick_power(base, power):	# 快速幂函数
- result = 1
- while power > 0:		# 只需计算二进制中不为零的数字，从右往左计算
-     if power & 1:		# 每次判断后底数变为原来一倍
-         result *= base
-     base *= base
-     power >>= 1
- return result
-base, power = map(int, input().split())
-power = Ten_to_two(power)
-print(quick_power(base, power))
-```
+1. ```cpp
+    long long int quik_power(int base, int power)
+    {
+        long long int result = 1;   //用于存储项累乘与返回最终结果，由于要存储累乘所以要初始化为1
+        while (power > 0)           //指数大于0说明指数的二进制位并没有被左移舍弃完毕
+        {
+            if (power & 1)          //指数的当前计算二进制位也就是最末尾的位是非零位也就是1的时候
+                                    //例如1001的当前计算位就是1， 100*1* 星号中的1就是当前计算使用的位
+                result *= base;     //累乘当前项并存储
+            base *= base;           //计算下一个项，例如当前是n^2的话计算下一项n^2的值
+                                    //n^4 = n^2 * n^2;
+            power >>= 1;            //指数位右移，为下一次运算做准备
+                                    //一次的右移将舍弃一个位例如1011(2)一次左移后变成101(2)
+        }
+        return result;              //返回最终结果
+    }
+    
+    ```
 
 
+
+2. ```cpp
+   long long int quik_power(int base, int power)
+   {
+   	long long int result = 1;
+   	while (power > 0)           //指数大于0进行指数折半，底数变其平方的操作
+   	{
+   		if (power % 2 == 1)     //指数为奇数
+   			result *= base;     //分离出当前项并累乘后保存
+   		power /= 2;        	    //指数折半
+   		base *= base;           //底数变其平方
+   	}
+   	return result;              //返回最终结果
+   }
+   
+   ```
+
+3. 
 
 
 
