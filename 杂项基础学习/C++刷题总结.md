@@ -919,31 +919,66 @@ int lcm(int a, int b)
 
 
 
-> 任意进制转换为十进制，k 进制，$\sum\limits_{i=1}^n{x}*{k^{(n-1)}}\quad$
+> #### 任意进制转换为十进制，k 进制，$\sum\limits_{i=1}^n{x}*{k^{(n-1)}}\quad$
+>
 > ```cpp
+> #include <bits/stdc++.h>
+> using namespace std;
 > using ll = long long;
-> 
-> ll x = 0;
-> for (int i = 1; i<= n; i++){
->     x = x * k +a[i];
+> string s = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+> int main(){
+>     int x; cin >> x;
+>     string ss; cin >> ss;
+>     ll ans = 0;
+>     for(int i = 0; i < ss.size(); i++){
+>         int temp;
+>         if(ss[i] >= '0' && ss[i] <= '9') temp = ss[i] - '0';
+>         else temp = ss[i] - 'A' + 10;
+>         ans = ans * x + temp; 
+>     }
+>     cout << ans << endl;
+>     return 0;
 > }
-> cout << x << endl;
 > ```
 >
 > 
 >
-> 十进制转换为任意进制，$x=\sum\limits_{i=1}^{n}{a_{n}}*{k^{n}}$
+> #### 十进制转换为任意进制，$x=\sum\limits_{i=1}^{n}{a_{n}}*{k^{n}}$
 >
 > ```cpp
 > # 十进制转任意进制
+> string s = "0123456789ABCDEF";
 > using ll = long long;
 > ll x; cin x;
 > while(x){
->     a[++cnt] = x % k;
->     x /= k;
+> a[++cnt] = x % k;
+> x /= k;
 > }
 > reverse(a + 1, a + 1 + cnt); 
+> 
 > ```
+>
+> #### 递归：用递归算法将一个十进制整数 X（1≤X≤10 ^ 9）转换成任意进制数 M（2 ≤ M ≤ 16）。
+>
+> ```cpp
+> #include <bits/stdc++.h>
+> using namespace std;
+> string s = "0123456789ABCDEF";
+> 
+> void f(int x, int m){
+>  // 辗转相除法
+>  if(x / m) f(x / m, m);
+>  cout << s[x % m];           // 倒序输出
+> }
+> int main(){
+>  long long x; cin >> x;
+>  int m; cin >> m;
+>  f(x, m);
+>  return 0;
+> }
+> ```
+>
+> 
 
 #### 6、前缀和
 
