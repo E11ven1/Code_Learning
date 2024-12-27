@@ -1173,6 +1173,8 @@ int lcm(int a, int b)
 >
 > **常见类型：**
 >
+> ​	退出循环时 l 、r 相邻
+>
 > 1. 整数二分
 >
 >    ```cpp
@@ -1193,6 +1195,18 @@ int lcm(int a, int b)
 > 2. 浮点二分
 >
 > 3. ==二分答案==
+>
+>    ```cpp
+>    int l = 0, r = 1e9;
+>    while(l + 1 != r){
+>        int mid = (l + r) / 2;
+>        if(check(mid)) l = mid;
+>        else r = mid;
+>    }
+>    cout << l;
+>    ```
+>
+>    
 >
 >  
 >
