@@ -147,3 +147,33 @@
 > - - part11：
 > - 最后的遗憾
 > - - part12：所有人都渴望童话会有完美的结局，但是这里呈现的时绝对的遗憾，现实与想象是绝对不对等的，虽然有时候可以，但是至少在这个故事里——不行
+
+
+
+
+
+> ## 二分[【二分查找】详细图解_二分法算法流程图-CSDN博客](https://blog.csdn.net/qq_45978890/article/details/116094046?ops_request_misc=%7B%22request%5Fid%22%3A%228d9f0c956ffb2e0b30ea062ca864147f%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=8d9f0c956ffb2e0b30ea062ca864147f&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-116094046-null-null.142^v100^pc_search_result_base4&utm_term=二分查找&spm=1018.2226.3001.4187)
+>
+> ​	可以参考下这篇文章，本质不难，难的是如何确定区间范围，简单来说可以分为两种
+>
+> - 一是==左闭右闭==区间
+>
+>   ```cpp
+>   while(l <= r){
+>       int mid = (l + r) / 2;
+>       if(f(mid) > target) r = mid - 1;
+>       else l = mid;
+>   }
+>   ```
+>
+> - 二是==左闭右开==区间
+>
+>   ```cpp
+>   while(l < r){
+>       int mid = (l + r) / 2;
+>       if(f(mid) > target) r = mid;
+>       else l = mid;
+>   }
+>   ```
+>
+>   
