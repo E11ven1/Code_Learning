@@ -1725,6 +1725,106 @@ int lcm(int a, int b)
 
 
 
+
+
+
+#### 15、[高精度](https://blog.csdn.net/wmy0217_/article/details/104269844)
+
+
+
+> 高精度算法，属于处理大数字的数学计算方法。在一般的科学计算中，会经常算到小数点后几百位或者更多，当然也可能是几千亿几百亿的大数字。一般这类数字我们统称为`高精度数`，高精度算法是用计算机对于超[大数据](https://so.csdn.net/so/search?q=大数据&spm=1001.2101.3001.7020)的一种模拟加，减，乘，除，乘方，阶乘，开方等运算。
+
+
+
+> ```cpp
+> #include <bits/stdc++.h>
+> using namespace std;
+> using ll = long long;
+> 
+> // https://www.luogu.com.cn/problem/P1303
+> // 高精度乘法
+> int main(){
+>     char a[100010], b[100010];
+>     int a1[100010], b1[100010], c[100010];
+>     cin >> a >> b;                        // 输入两个字符串
+>     int lena = strlen(a), lenb = strlen(b);                     // 字符串长度
+> 
+>     // 字符串转数字,因为要计算乘法，所以模拟数学列竖式乘法
+>     // 先把字符串转成数字数组，要从右至左计算每一位乘法，所以转换成数字时要倒序转化
+>     for(int i = 1; i <= lena; i++) a1[i] = a[lena-i] - '0';     
+>     for(int i = 1; i <= lenb; i++) b1[i] = b[lenb-i] - '0';
+> 
+>     // 高精度乘法，用数组模拟竖式乘法
+>     for(int i = 1; i <= lena; i++){
+>         for(int j = 1; j <= lenb; j++){
+>             c[i + j - 1] += a1[i] * b1[j];                      // 注意乘积是在哪一位上乘的，要进位
+>         }
+>     }
+>     for(int i = 1; i <= lena + lenb; i++){
+>         if(c[i] > 9){                                     // 进位，得出乘积的数字大于 9 时，要进位
+>             c[i+1] += c[i] / 10;                            // 进位
+>             c[i] %= 10;                                    // 取余更新当前位
+>         }
+>     }
+>     int lenc = lena + lenb;                                 // 结果的长度
+>     while(lenc > 1 && c[lenc] == 0) lenc--;                 // 去除前导 0
+>     for(int i = lenc; i >= 1; i--){                          // 输出结果，倒序输出
+>         cout << c[i];
+>     }
+>     return 0;
+> }
+> 
+> ```
+>
+>  
+>
+>  
+>
+>  
+>
+>  
+>
+> ```cpp
+> #include <bits/stdc++.h>
+> using namespace std;
+> using ll = long long;
+> 
+> // 高精度加法
+> // https://www.luogu.com.cn/problem/P1601
+> int main(){
+>     char a[100005], b[100005];
+>     int a1[100005], b1[100005], c1[100005];
+>     cin >> a >> b;
+>     int lena = strlen(a), lenb = strlen(b);
+>     for(int i = 1; i <= lena; i++) a1[i] = a[lena - i] - '0';
+>     for(int i = 1; i <= lenb; i++) b1[i] = b[lenb - i] - '0';
+>     for(int i = 1; i <= max(lena, lenb) + 1; i++){
+>         c1[i] += a1[i] + b1[i];
+>         c1[i + 1] += c1[i] / 10;
+>         c1[i] %= 10;
+>     }
+>     // if(c1[max(lena, lenb) + 1]) cout << c1[max(lena, lenb) + 1];
+>     for(int i = max(lena, lenb); i >= 1; i--){
+>         cout << c1[i];
+>     }
+>     return 0;
+> }
+> ```
+>
+> 
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 二、排序
 
 #### 1、冒泡排序
