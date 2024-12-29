@@ -1,0 +1,13 @@
+[Bookmarks]
+[Recent]
+D:\blenderdemo\blenderdemo\八个案例\A8机器人\
+D:\blenderdemo\blenderdemo\八个案例\A7\
+D:\blenderdemo\blenderdemo\八个案例\A6子弹\
+D:\blenderdemo\blenderdemo\八个案例\A1三兄弟\
+D:\blenderdemo\blenderdemo\八个案例\
+D:\blenderdemo\blenderdemo\八个案例\A5荧光树桩\
+D:\blenderdemo\blenderdemo\八个案例\A2积木\
+D:\blenderdemo\blenderdemo\八个案例\A3金币基站\
+D:\blenderdemo\blenderdemo\八个案例\A4小车\
+!字体
+C:\WINDOWS\Fonts\
