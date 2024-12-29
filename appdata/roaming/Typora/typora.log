@@ -1,0 +1,499 @@
+INFO 2024/12/28 17:44:33  launch with argv [D:\littlesoftware\Typora\Typora.exe]
+INFO 2024/12/28 17:44:33  start LM in devVersion=false
+INFO 2024/12/28 17:44:33  L]
+INFO 2024/12/28 17:44:33  [L] installDate is 12/4/2024, trail remains: 0 days
+INFO 2024/12/28 17:44:33  [watch L] hasL: true
+INFO 2024/12/28 17:44:33  ------------------start------------------
+INFO 2024/12/28 17:44:33  typora version: 1.9.4
+INFO 2024/12/28 17:44:33  [Raven] instanceKey = 8d6f09ac-688f-4c7e-b35a-5d5ff161d0d4
+INFO 2024/12/28 17:44:33  [Raven] userId = 8324acf8-3f7b-47e2-b473-2d5a14e9a250
+INFO 2024/12/28 17:44:34  addRecentDocument
+INFO 2024/12/28 17:44:34  [focus] 1
+INFO 2024/12/28 17:44:34  synced recovery
+ERROR 2024/12/28 17:44:34  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114382)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+    at SimpleURLLoaderWrapper.emit (node:domain:488:12)
+ERROR 2024/12/28 17:44:35  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114382)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+    at SimpleURLLoaderWrapper.emit (node:domain:488:12)
+ERROR 2024/12/28 17:44:35  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114382)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+    at SimpleURLLoaderWrapper.emit (node:domain:488:12)
+INFO 2024/12/28 17:44:35  handle document.loadData
+ERROR 2024/12/28 17:44:35  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114382)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+    at SimpleURLLoaderWrapper.emit (node:domain:488:12)
+INFO 2024/12/28 17:44:35  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 17:44:35  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 17:44:35  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\My Log.md
+INFO 2024/12/28 17:44:36  synced recovery
+INFO 2024/12/28 17:44:36  [RenderProcess 1][Log] onBecomeActive
+INFO 2024/12/28 17:44:36  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 17:44:39  [blur] 1
+INFO 2024/12/28 17:44:39  [win] blur
+INFO 2024/12/28 17:44:43  [focus] 1
+INFO 2024/12/28 17:44:51  synced recovery
+INFO 2024/12/28 17:44:52  synced recovery
+INFO 2024/12/28 17:44:56  synced recovery
+ERROR 2024/12/28 17:44:58  unhandledRejection FetchError: request to https://typora.io/releases/windows_64.json failed, reason: net::ERR_CONNECTION_TIMED_OUT
+    at ClientRequest.<anonymous> (D:\littlesoftware\Typora\resources\node_modules.asar\electron-fetch\lib\index.js:1402:14)
+    at ClientRequest.emit (node:events:518:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at ClientRequest._die (node:electron/js2c/browser_init:2:115716)
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114442)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+    at SimpleURLLoaderWrapper.emit (node:domain:488:12)
+INFO 2024/12/28 17:44:58  synced recovery
+INFO 2024/12/28 17:45:00  synced recovery
+INFO 2024/12/28 17:45:02  synced recovery
+INFO 2024/12/28 17:45:05  synced recovery
+INFO 2024/12/28 17:45:07  synced recovery
+INFO 2024/12/28 17:45:11  synced recovery
+INFO 2024/12/28 17:45:15  synced recovery
+INFO 2024/12/28 17:45:18  synced recovery
+INFO 2024/12/28 17:45:27  synced recovery
+INFO 2024/12/28 17:45:31  synced recovery
+INFO 2024/12/28 17:46:33  synced recovery
+INFO 2024/12/28 17:46:38  synced recovery
+INFO 2024/12/28 17:46:41  synced recovery
+INFO 2024/12/28 17:46:45  synced recovery
+INFO 2024/12/28 17:46:49  synced recovery
+INFO 2024/12/28 17:46:52  synced recovery
+INFO 2024/12/28 17:46:54  synced recovery
+INFO 2024/12/28 17:46:59  synced recovery
+INFO 2024/12/28 17:47:00  synced recovery
+INFO 2024/12/28 17:47:03  synced recovery
+INFO 2024/12/28 17:47:08  synced recovery
+INFO 2024/12/28 17:47:13  synced recovery
+INFO 2024/12/28 17:47:31  synced recovery
+INFO 2024/12/28 17:47:34  synced recovery
+INFO 2024/12/28 17:47:37  synced recovery
+INFO 2024/12/28 17:47:41  synced recovery
+INFO 2024/12/28 17:47:47  synced recovery
+INFO 2024/12/28 17:47:50  synced recovery
+INFO 2024/12/28 17:47:54  synced recovery
+INFO 2024/12/28 17:48:03  synced recovery
+INFO 2024/12/28 17:48:06  synced recovery
+INFO 2024/12/28 17:48:11  synced recovery
+INFO 2024/12/28 17:48:16  synced recovery
+INFO 2024/12/28 17:48:22  synced recovery
+INFO 2024/12/28 17:48:26  synced recovery
+INFO 2024/12/28 17:48:36  synced recovery
+INFO 2024/12/28 17:48:40  synced recovery
+INFO 2024/12/28 17:48:45  synced recovery
+INFO 2024/12/28 17:48:49  synced recovery
+INFO 2024/12/28 17:48:58  synced recovery
+INFO 2024/12/28 17:49:00  synced recovery
+INFO 2024/12/28 17:49:04  synced recovery
+INFO 2024/12/28 17:49:08  synced recovery
+INFO 2024/12/28 17:49:10  synced recovery
+INFO 2024/12/28 17:49:12  synced recovery
+INFO 2024/12/28 17:49:16  synced recovery
+INFO 2024/12/28 17:49:21  synced recovery
+INFO 2024/12/28 17:49:23  synced recovery
+INFO 2024/12/28 17:50:13  synced recovery
+INFO 2024/12/28 17:50:27  synced recovery
+INFO 2024/12/28 17:50:32  synced recovery
+INFO 2024/12/28 17:50:37  synced recovery
+INFO 2024/12/28 17:50:40  synced recovery
+INFO 2024/12/28 17:50:45  synced recovery
+INFO 2024/12/28 17:50:50  synced recovery
+INFO 2024/12/28 17:50:53  synced recovery
+INFO 2024/12/28 17:50:56  synced recovery
+INFO 2024/12/28 17:50:59  synced recovery
+INFO 2024/12/28 17:51:08  synced recovery
+INFO 2024/12/28 17:51:13  synced recovery
+INFO 2024/12/28 17:51:16  synced recovery
+INFO 2024/12/28 17:51:17  synced recovery
+INFO 2024/12/28 17:52:39  synced recovery
+INFO 2024/12/28 17:52:43  synced recovery
+INFO 2024/12/28 17:52:58  synced recovery
+INFO 2024/12/28 17:53:01  synced recovery
+INFO 2024/12/28 17:53:09  synced recovery
+INFO 2024/12/28 17:53:10  synced recovery
+INFO 2024/12/28 17:53:13  synced recovery
+INFO 2024/12/28 17:53:21  synced recovery
+INFO 2024/12/28 17:53:28  synced recovery
+INFO 2024/12/28 17:53:36  synced recovery
+INFO 2024/12/28 17:53:39  synced recovery
+INFO 2024/12/28 17:53:43  synced recovery
+INFO 2024/12/28 17:53:45  synced recovery
+INFO 2024/12/28 17:53:51  synced recovery
+INFO 2024/12/28 17:53:59  synced recovery
+INFO 2024/12/28 17:54:02  synced recovery
+INFO 2024/12/28 17:54:05  synced recovery
+INFO 2024/12/28 17:54:09  synced recovery
+INFO 2024/12/28 17:54:22  synced recovery
+INFO 2024/12/28 17:54:26  synced recovery
+INFO 2024/12/28 17:54:32  synced recovery
+INFO 2024/12/28 17:54:35  synced recovery
+INFO 2024/12/28 17:54:38  synced recovery
+INFO 2024/12/28 17:54:46  synced recovery
+INFO 2024/12/28 17:54:50  synced recovery
+INFO 2024/12/28 17:54:55  synced recovery
+INFO 2024/12/28 17:54:58  synced recovery
+INFO 2024/12/28 17:55:03  synced recovery
+INFO 2024/12/28 17:55:07  synced recovery
+INFO 2024/12/28 17:55:10  synced recovery
+INFO 2024/12/28 17:55:13  synced recovery
+INFO 2024/12/28 17:55:16  synced recovery
+INFO 2024/12/28 17:55:18  synced recovery
+INFO 2024/12/28 17:55:29  synced recovery
+INFO 2024/12/28 17:55:32  synced recovery
+INFO 2024/12/28 17:55:37  synced recovery
+INFO 2024/12/28 17:55:40  synced recovery
+INFO 2024/12/28 17:55:45  synced recovery
+INFO 2024/12/28 17:55:47  synced recovery
+INFO 2024/12/28 17:56:52  synced recovery
+INFO 2024/12/28 17:57:05  synced recovery
+INFO 2024/12/28 17:57:09  synced recovery
+INFO 2024/12/28 17:57:12  synced recovery
+INFO 2024/12/28 17:57:16  synced recovery
+INFO 2024/12/28 17:57:26  synced recovery
+INFO 2024/12/28 17:57:30  synced recovery
+INFO 2024/12/28 17:57:52  synced recovery
+INFO 2024/12/28 17:57:57  synced recovery
+INFO 2024/12/28 17:58:01  synced recovery
+INFO 2024/12/28 17:58:09  synced recovery
+INFO 2024/12/28 17:58:13  synced recovery
+INFO 2024/12/28 17:58:17  synced recovery
+INFO 2024/12/28 17:58:21  synced recovery
+INFO 2024/12/28 17:58:24  synced recovery
+INFO 2024/12/28 17:58:28  synced recovery
+INFO 2024/12/28 17:58:35  synced recovery
+INFO 2024/12/28 17:58:38  synced recovery
+INFO 2024/12/28 17:58:48  synced recovery
+INFO 2024/12/28 17:58:51  synced recovery
+INFO 2024/12/28 17:59:06  synced recovery
+INFO 2024/12/28 17:59:09  synced recovery
+INFO 2024/12/28 17:59:18  synced recovery
+INFO 2024/12/28 17:59:25  synced recovery
+INFO 2024/12/28 17:59:30  synced recovery
+INFO 2024/12/28 17:59:36  synced recovery
+INFO 2024/12/28 17:59:58  synced recovery
+INFO 2024/12/28 18:00:08  synced recovery
+INFO 2024/12/28 18:00:12  synced recovery
+INFO 2024/12/28 18:00:14  synced recovery
+INFO 2024/12/28 18:00:18  synced recovery
+INFO 2024/12/28 18:00:23  synced recovery
+INFO 2024/12/28 18:00:29  synced recovery
+INFO 2024/12/28 18:00:36  synced recovery
+INFO 2024/12/28 18:00:41  synced recovery
+INFO 2024/12/28 18:00:47  synced recovery
+INFO 2024/12/28 18:01:09  synced recovery
+INFO 2024/12/28 18:01:12  synced recovery
+INFO 2024/12/28 18:01:15  synced recovery
+INFO 2024/12/28 18:01:19  synced recovery
+INFO 2024/12/28 18:01:26  synced recovery
+INFO 2024/12/28 18:01:34  synced recovery
+INFO 2024/12/28 18:01:46  synced recovery
+INFO 2024/12/28 18:01:49  synced recovery
+INFO 2024/12/28 18:01:57  synced recovery
+INFO 2024/12/28 18:02:05  synced recovery
+INFO 2024/12/28 18:02:09  synced recovery
+INFO 2024/12/28 18:02:15  synced recovery
+INFO 2024/12/28 18:02:28  synced recovery
+INFO 2024/12/28 18:02:33  synced recovery
+INFO 2024/12/28 18:02:35  synced recovery
+INFO 2024/12/28 18:02:36  synced recovery
+INFO 2024/12/28 18:02:41  synced recovery
+INFO 2024/12/28 18:02:54  synced recovery
+INFO 2024/12/28 18:03:03  synced recovery
+INFO 2024/12/28 18:03:55  synced recovery
+INFO 2024/12/28 18:03:59  synced recovery
+INFO 2024/12/28 18:04:03  synced recovery
+INFO 2024/12/28 18:04:07  synced recovery
+INFO 2024/12/28 18:04:11  synced recovery
+INFO 2024/12/28 18:04:16  synced recovery
+INFO 2024/12/28 18:04:19  synced recovery
+INFO 2024/12/28 18:04:21  synced recovery
+INFO 2024/12/28 18:04:26  synced recovery
+INFO 2024/12/28 18:04:27  synced recovery
+INFO 2024/12/28 18:04:30  synced recovery
+INFO 2024/12/28 18:04:32  synced recovery
+INFO 2024/12/28 18:04:55  synced recovery
+INFO 2024/12/28 18:04:55  switchDocument 1 [D:\Git\demo\Code_Learning\杂项基础学习\C++刷题总结.md]
+INFO 2024/12/28 18:04:55  addRecentDocument
+INFO 2024/12/28 18:04:55  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:04:55  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:04:55  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:04:55  synced recovery
+INFO 2024/12/28 18:04:55  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\C++刷题总结.md
+INFO 2024/12/28 18:04:56  [RenderProcess 1][Log] enter busy mode
+INFO 2024/12/28 18:04:56  synced recovery
+INFO 2024/12/28 18:05:12  synced recovery
+INFO 2024/12/28 18:05:14  synced recovery
+INFO 2024/12/28 18:05:16  synced recovery
+INFO 2024/12/28 18:05:18  synced recovery
+INFO 2024/12/28 18:05:21  synced recovery
+INFO 2024/12/28 18:05:22  synced recovery
+INFO 2024/12/28 18:05:27  synced recovery
+INFO 2024/12/28 18:05:31  [blur] 1
+INFO 2024/12/28 18:05:31  [win] blur
+INFO 2024/12/28 18:06:04  [focus] 1
+INFO 2024/12/28 18:06:08  synced recovery
+INFO 2024/12/28 18:06:10  synced recovery
+INFO 2024/12/28 18:06:13  synced recovery
+INFO 2024/12/28 18:06:18  synced recovery
+INFO 2024/12/28 18:06:19  [blur] 1
+INFO 2024/12/28 18:06:19  [win] blur
+INFO 2024/12/28 18:06:26  [focus] 1
+INFO 2024/12/28 18:06:29  synced recovery
+INFO 2024/12/28 18:06:37  synced recovery
+INFO 2024/12/28 18:06:40  synced recovery
+INFO 2024/12/28 18:06:45  synced recovery
+INFO 2024/12/28 18:06:57  synced recovery
+INFO 2024/12/28 18:06:59  synced recovery
+INFO 2024/12/28 18:07:01  synced recovery
+INFO 2024/12/28 18:07:04  synced recovery
+INFO 2024/12/28 18:07:07  synced recovery
+INFO 2024/12/28 18:07:10  synced recovery
+INFO 2024/12/28 18:07:12  synced recovery
+INFO 2024/12/28 18:07:15  synced recovery
+INFO 2024/12/28 18:07:16  synced recovery
+INFO 2024/12/28 18:07:18  [blur] 1
+INFO 2024/12/28 18:07:18  [win] blur
+INFO 2024/12/28 18:07:22  [focus] 1
+INFO 2024/12/28 18:07:25  synced recovery
+INFO 2024/12/28 18:07:27  [blur] 1
+INFO 2024/12/28 18:07:27  [win] blur
+INFO 2024/12/28 18:07:30  [focus] 1
+INFO 2024/12/28 18:07:33  synced recovery
+INFO 2024/12/28 18:07:34  [blur] 1
+INFO 2024/12/28 18:07:34  [win] blur
+INFO 2024/12/28 18:07:59  [focus] 1
+INFO 2024/12/28 18:08:00  [blur] 1
+INFO 2024/12/28 18:08:00  [win] blur
+INFO 2024/12/28 18:08:11  [blur] 1
+INFO 2024/12/28 18:08:11  [win] blur
+INFO 2024/12/28 18:08:11  [focus] 1
+INFO 2024/12/28 18:08:18  synced recovery
+INFO 2024/12/28 18:08:24  [blur] 1
+INFO 2024/12/28 18:08:24  [win] blur
+INFO 2024/12/28 18:08:29  [focus] 1
+INFO 2024/12/28 18:08:32  synced recovery
+INFO 2024/12/28 18:08:32  switchDocument 1 [D:\Git\demo\Code_Learning\杂项基础学习\aseprite学习记录.md]
+INFO 2024/12/28 18:08:32  addRecentDocument
+INFO 2024/12/28 18:08:32  synced recovery
+INFO 2024/12/28 18:08:32  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:08:32  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:08:32  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:08:32  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\aseprite学习记录.md
+INFO 2024/12/28 18:08:32  synced recovery
+INFO 2024/12/28 18:08:32  [RenderProcess 1][Log] leave busy mode
+INFO 2024/12/28 18:08:33  switchDocument 1 [D:\Git\demo\Code_Learning\杂项基础学习\C++刷题总结.md]
+INFO 2024/12/28 18:08:33  addRecentDocument
+INFO 2024/12/28 18:08:33  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:08:33  synced recovery
+INFO 2024/12/28 18:08:33  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:08:33  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:08:33  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\C++刷题总结.md
+INFO 2024/12/28 18:08:33  [RenderProcess 1][Log] do restoreEditStateFromData true false
+INFO 2024/12/28 18:08:33  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:08:33  [RenderProcess 1][Log] [UndoManager] restoreFromJson all: 46 at: 45
+INFO 2024/12/28 18:08:33  synced recovery
+INFO 2024/12/28 18:08:34  [RenderProcess 1][Log] enter busy mode
+INFO 2024/12/28 18:08:35  [blur] 1
+INFO 2024/12/28 18:08:35  [win] blur
+INFO 2024/12/28 18:22:07  [blur] 1
+INFO 2024/12/28 18:22:07  [win] blur
+INFO 2024/12/28 18:22:07  [focus] 1
+INFO 2024/12/28 18:22:10  synced recovery
+INFO 2024/12/28 18:22:10  switchDocument 1 [D:\Git\demo\Code_Learning\杂项基础学习\C++学习记录.md]
+INFO 2024/12/28 18:22:10  addRecentDocument
+INFO 2024/12/28 18:22:10  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:22:10  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:22:10  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:22:10  synced recovery
+INFO 2024/12/28 18:22:10  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\C++学习记录.md
+INFO 2024/12/28 18:22:10  synced recovery
+INFO 2024/12/28 18:22:10  [RenderProcess 1][Log] leave busy mode
+INFO 2024/12/28 18:22:12  switchDocument 1 [D:\Git\demo\Code_Learning\杂项基础学习\C++刷题总结.md]
+INFO 2024/12/28 18:22:12  addRecentDocument
+INFO 2024/12/28 18:22:12  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:22:12  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:22:12  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:22:12  synced recovery
+INFO 2024/12/28 18:22:12  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\C++刷题总结.md
+INFO 2024/12/28 18:22:12  [RenderProcess 1][Log] do restoreEditStateFromData true false
+INFO 2024/12/28 18:22:12  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:22:12  [RenderProcess 1][Log] [UndoManager] restoreFromJson all: 46 at: 45
+INFO 2024/12/28 18:22:18  switchDocument 1 [D:\Git\demo\Code_Learning\杂项基础学习\aseprite学习记录.md]
+INFO 2024/12/28 18:22:18  addRecentDocument
+INFO 2024/12/28 18:22:18  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:22:18  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:22:18  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:22:18  synced recovery
+INFO 2024/12/28 18:22:19  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\aseprite学习记录.md
+INFO 2024/12/28 18:22:19  synced recovery
+INFO 2024/12/28 18:22:20  switchDocument 1 [D:\Git\demo\Code_Learning\杂项基础学习\C++刷题总结.md]
+INFO 2024/12/28 18:22:20  addRecentDocument
+INFO 2024/12/28 18:22:20  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:22:20  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:22:20  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:22:20  synced recovery
+INFO 2024/12/28 18:22:20  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\C++刷题总结.md
+INFO 2024/12/28 18:22:20  [RenderProcess 1][Log] do restoreEditStateFromData true false
+INFO 2024/12/28 18:22:20  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:22:20  [RenderProcess 1][Log] [UndoManager] restoreFromJson all: 46 at: 45
+INFO 2024/12/28 18:22:25  [RenderProcess 1][Log] enter busy mode
+INFO 2024/12/28 18:22:25  switchDocument 1 [D:\Git\demo\Code_Learning\杂项基础学习\C++学习记录.md]
+INFO 2024/12/28 18:22:25  addRecentDocument
+INFO 2024/12/28 18:22:25  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:22:25  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:22:25  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:22:25  synced recovery
+INFO 2024/12/28 18:22:25  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\C++学习记录.md
+INFO 2024/12/28 18:22:25  synced recovery
+INFO 2024/12/28 18:22:26  switchDocument 1 [D:\Git\demo\Code_Learning\杂项基础学习\CSS基础.md]
+INFO 2024/12/28 18:22:26  addRecentDocument
+INFO 2024/12/28 18:22:26  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:22:26  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:22:26  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:22:26  synced recovery
+INFO 2024/12/28 18:22:26  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\CSS基础.md
+INFO 2024/12/28 18:22:26  synced recovery
+INFO 2024/12/28 18:22:27  switchDocument 1 [D:\Git\demo\Code_Learning\杂项基础学习\C++刷题总结.md]
+INFO 2024/12/28 18:22:27  addRecentDocument
+INFO 2024/12/28 18:22:27  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:22:27  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:22:27  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:22:27  synced recovery
+INFO 2024/12/28 18:22:27  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\C++刷题总结.md
+INFO 2024/12/28 18:22:27  synced recovery
+INFO 2024/12/28 18:22:30  [blur] 1
+INFO 2024/12/28 18:22:30  [win] blur
+INFO 2024/12/28 18:26:30  [blur] 1
+INFO 2024/12/28 18:26:30  [win] blur
+INFO 2024/12/28 18:26:30  [focus] 1
+INFO 2024/12/28 18:26:32  synced recovery
+INFO 2024/12/28 18:26:32  synced recovery
+INFO 2024/12/28 18:26:32  synced recovery
+INFO 2024/12/28 18:26:33  synced recovery
+INFO 2024/12/28 18:26:33  ----------------before-quit-----------------
+INFO 2024/12/28 18:26:33  ------------------will-quit------------------
+INFO 2024/12/28 18:26:33  -----------------quit------------------
+INFO 2024/12/28 18:26:33  closeLogging
+INFO 2024/12/28 18:27:05  launch with argv [D:\littlesoftware\Typora\Typora.exe]
+INFO 2024/12/28 18:27:06  start LM in devVersion=false
+INFO 2024/12/28 18:27:06  L]
+INFO 2024/12/28 18:27:06  [L] installDate is 12/4/2024, trail remains: 0 days
+INFO 2024/12/28 18:27:06  [watch L] hasL: true
+INFO 2024/12/28 18:27:06  ------------------start------------------
+INFO 2024/12/28 18:27:06  typora version: 1.9.4
+INFO 2024/12/28 18:27:06  [Raven] instanceKey = 5e9465f1-c51b-4285-ac77-f36bcb5b8ae4
+user-dict.json not found
+INFO 2024/12/28 18:27:06  addRecentDocument
+INFO 2024/12/28 18:27:06  [Raven] userId = 8324acf8-3f7b-47e2-b473-2d5a14e9a250
+INFO 2024/12/28 18:27:06  [focus] 1
+INFO 2024/12/28 18:27:06  synced recovery
+ERROR 2024/12/28 18:27:06  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114382)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+    at SimpleURLLoaderWrapper.emit (node:domain:488:12)
+ERROR 2024/12/28 18:27:07  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114382)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+    at SimpleURLLoaderWrapper.emit (node:domain:488:12)
+ERROR 2024/12/28 18:27:07  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114382)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+    at SimpleURLLoaderWrapper.emit (node:domain:488:12)
+INFO 2024/12/28 18:27:07  handle document.loadData
+ERROR 2024/12/28 18:27:07  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114382)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+    at SimpleURLLoaderWrapper.emit (node:domain:488:12)
+INFO 2024/12/28 18:27:07  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:27:07  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:27:07  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\C++刷题总结.md
+INFO 2024/12/28 18:27:08  synced recovery
+INFO 2024/12/28 18:27:08  [RenderProcess 1][Log] onBecomeActive
+INFO 2024/12/28 18:27:08  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:27:14  switchDocument 1 [D:\Git\demo\Code_Learning\杂项基础学习\aseprite学习记录.md]
+INFO 2024/12/28 18:27:14  addRecentDocument
+INFO 2024/12/28 18:27:14  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2024/12/28 18:27:14  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2024/12/28 18:27:14  [RenderProcess 1][Log] reset NodeMap
+INFO 2024/12/28 18:27:14  synced recovery
+INFO 2024/12/28 18:27:14  [RenderProcess 1][Log] readContentFrom D:\Git\demo\Code_Learning\杂项基础学习\aseprite学习记录.md
+INFO 2024/12/28 18:27:14  synced recovery
+INFO 2024/12/28 18:27:26  synced recovery
+INFO 2024/12/28 18:27:29  synced recovery
+ERROR 2024/12/28 18:27:30  unhandledRejection FetchError: request to https://typora.io/releases/windows_64.json failed, reason: net::ERR_CONNECTION_TIMED_OUT
+    at ClientRequest.<anonymous> (D:\littlesoftware\Typora\resources\node_modules.asar\electron-fetch\lib\index.js:1402:14)
+    at ClientRequest.emit (node:events:518:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at ClientRequest._die (node:electron/js2c/browser_init:2:115716)
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114442)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+    at SimpleURLLoaderWrapper.emit (node:domain:488:12)
+INFO 2024/12/28 18:27:37  synced recovery
+INFO 2024/12/28 18:27:40  synced recovery
+INFO 2024/12/28 18:27:46  synced recovery
+INFO 2024/12/28 18:27:49  synced recovery
+INFO 2024/12/28 18:27:55  synced recovery
+INFO 2024/12/28 18:28:01  synced recovery
+INFO 2024/12/28 18:28:03  synced recovery
+INFO 2024/12/28 18:28:06  synced recovery
+INFO 2024/12/28 18:28:08  synced recovery
+INFO 2024/12/28 18:28:14  synced recovery
+INFO 2024/12/28 18:28:19  synced recovery
+INFO 2024/12/28 18:28:23  synced recovery
+INFO 2024/12/28 18:28:24  synced recovery
+INFO 2024/12/28 18:28:26  synced recovery
+INFO 2024/12/28 18:28:30  synced recovery
+INFO 2024/12/28 18:28:37  synced recovery
+INFO 2024/12/28 18:28:45  synced recovery
+INFO 2024/12/28 18:28:49  synced recovery
+INFO 2024/12/28 18:28:54  synced recovery
+INFO 2024/12/28 18:29:00  synced recovery
+INFO 2024/12/28 18:29:05  synced recovery
+INFO 2024/12/28 18:29:12  synced recovery
+INFO 2024/12/28 18:29:15  synced recovery
+INFO 2024/12/28 18:29:20  synced recovery
+INFO 2024/12/28 18:29:25  synced recovery
+INFO 2024/12/28 18:29:28  synced recovery
+INFO 2024/12/28 18:29:30  [blur] 1
+INFO 2024/12/28 18:29:30  [win] blur
+INFO 2024/12/28 18:33:53  [Power] lock-screen
+INFO 2024/12/28 18:33:53  [RenderProcess 1][Log] [powerMonitor] lock-screen
+INFO 2024/12/28 19:12:25  [Power] lock-screen
+INFO 2024/12/28 19:12:25  [RenderProcess 1][Log] [powerMonitor] unlock-screen
+INFO 2024/12/28 19:14:37  [Power] lock-screen
+INFO 2024/12/28 19:14:37  [RenderProcess 1][Log] [powerMonitor] lock-screen
+INFO 2024/12/28 19:17:59  [Power] lock-screen
+INFO 2024/12/28 19:17:59  [RenderProcess 1][Log] [powerMonitor] unlock-screen
+INFO 2024/12/28 19:18:01  [focus] 1
+INFO 2024/12/28 19:18:04  [blur] 1
+INFO 2024/12/28 19:18:04  [win] blur
+INFO 2024/12/28 19:21:41  [Power] lock-screen
+INFO 2024/12/28 19:21:41  [RenderProcess 1][Log] [powerMonitor] lock-screen
+INFO 2024/12/28 19:24:13  [Power] lock-screen
+INFO 2024/12/28 19:24:13  [RenderProcess 1][Log] [powerMonitor] unlock-screen
+INFO 2024/12/28 19:42:57  [Power] lock-screen
+INFO 2024/12/28 19:42:57  [RenderProcess 1][Log] [powerMonitor] lock-screen
+INFO 2024/12/28 19:52:00  [Power] lock-screen
+INFO 2024/12/28 19:52:00  [RenderProcess 1][Log] [powerMonitor] unlock-screen
+INFO 2024/12/28 20:01:22  [Power] lock-screen
+INFO 2024/12/28 20:01:22  [RenderProcess 1][Log] [powerMonitor] lock-screen
+INFO 2024/12/28 20:35:01  [Power] lock-screen
+INFO 2024/12/28 20:35:01  [RenderProcess 1][Log] [powerMonitor] unlock-screen
+INFO 2024/12/28 20:35:05  [blur] 1
+INFO 2024/12/28 20:35:05  [win] blur
+INFO 2024/12/28 20:35:05  [focus] 1
+INFO 2024/12/28 20:35:11  [blur] 1
+INFO 2024/12/28 20:35:11  [win] blur
+INFO 2024/12/28 23:08:22  [blur] 1
+INFO 2024/12/28 23:08:22  [win] blur
+INFO 2024/12/28 23:08:22  [focus] 1
+INFO 2024/12/28 23:08:25  synced recovery
+INFO 2024/12/28 23:08:25  synced recovery
+INFO 2024/12/28 23:08:25  ----------------before-quit-----------------
+INFO 2024/12/28 23:08:25  ------------------will-quit------------------
+INFO 2024/12/28 23:08:25  -----------------quit------------------
+INFO 2024/12/28 23:08:25  closeLogging
